@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciamento de Chamados</title>
+    <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Gerenciamento de Chamados</h1>
+        <form class="filter-form">
+            <div class="filter-group">
+                <label for="status">Status:</label>
+                <select id="status" name="status">
+                    <option value="aberto">Aberto</option>
+                    <option value="em andamento">Em andamento</option>
+                    <option value="resolvido">Resolvido</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label for="criticidade">Criticidade:</label>
+                <select id="criticidade" name="criticidade">
+                    <option value="baixa">Baixa</option>
+                    <option value="média">Média</option>
+                    <option value="alta">Alta</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label for="colaborador">Colaborador:</label>
+                <select id="colaborador" name="colaborador">
+                    <option value="">Selecione</option>
+                    
+                </select>
+            </div>
+            <button type="submit" class="filter-btn">Filtrar</button>
+        </form>
+
+        <table class="chamados-table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Cliente</th>
+                    <th>Descrição</th>
+                    <th>Criticidade</th>
+                    <th>Status</th>
+                    <th>Responsável</th>
+                </tr>
+            </thead>
+            <tbody>
+               
+                <tr>
+                    <td>1</td>
+                    <td>João Silva</td>
+                    <td>Problema no sistema</td>
+                    <td>Alta</td>
+                    <td>Aberto</td>
+                    <td>Maria</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
